@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+#wrapper{
+    width: 100%;
+min-height: 100vh;
+background-color: #f2ebe3;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+.ticket{
+    max-width: 700px;
+ 
+    display: flex;
+    margin: 1rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0px -1px 20px -5px rgba(0, 0, 0, 0.5);
+}
+     .image{
+        width: 45%;
+        border-radius: 20px 0px 0px 20px;
+    }
+    .desktopimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    }
+     .mobileimg{
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+        display: none;
+    }
+    .text{
+        width: 55%;
+        padding: 1.5rem 2rem;
+        background-color: #fff;
+        color: gray;
+        border-radius: 0px 20px 20px 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    }
+    
+    .product{
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+    }
+    .head{
+        width: 80%;
+        font-size: 2rem;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        color: #000;
+        line-height: 2rem;
+        margin-top: 1.2rem;
+    }
+    
+    .desc{
+        width: 96%;
+        font-size: 1rem;
+        margin: 1.5rem 0;
+    }
+    .new-price{
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: 2rem;
+        color: green;
+        margin-right: 0.6rem;
+    }
+     .old-price{
+        font-weight: 200;
+        font-size: 1rem;
+        text-decoration: line-through;
+        margin-left: 0.6rem;
+    }
+    .product-btn{
+
+background-color: #3c8067;
+font-size: 1rem;
+color: #fff;
+width: 100%;
+text-align: center;
+border-radius: 10px;
+margin-top:  1rem ;
+padding: 0.9rem 0;
+font-family: inherit;
+cursor: pointer;
+transition: all 0.1s;
+    }
+    .product-btn img{
+        margin-right: 0.9rem;
+    }
+    .product-btn:hover{
+        background-color: darkGreen;
+    }
+    
+    .product-btn .pdtext{
+        color: white;
+        font-size: medium;
+        margin-left: .5rem;
+    }
+    @media screen and (max-width: 650px) {
+
+        .ticket{
+            flex-direction: column;
+            max-width: 400px;
+        }
+    
+         .image, .text{
+            width: 100%;
+        }
+    
+        .image{
+            border-radius: 15px 15px 0px 0px;
+        }
+    
+       .desktopimg{
+            display: none;
+        }
+    .mobileimg{
+            display: block;
+            border-radius: 15px 15px 0px 0px;
+        }
+    
+       
+    
+        .text{
+            border-radius: 0px 0px 15px 15px;
+        }
+    
+        .head{
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 350px){
+        .text{
+            padding: 1rem 1.3rem;
+        }
+    
+        .head{
+            font-size: 1.5rem;
+        }
+    
+        .desc{
+            font-size: 0.9rem;
+        }
+    
+     .product-btn{
+            margin-top: 0.7rem;
+        }
+    }
+    
+    @media screen and (min-width: 1900px){
+        .ticket{
+            max-width: 1200px ;
+        }
+        
+        .text{
+            padding: 4rem  2.5rem;
+        }
+    
+        .product{
+            font-size: 2rem;
+         }
+    
+         .head{
+            font-size: 5rem;
+            line-height: 5rem;
+            margin-top: 2.5rem;
+         }
+    
+         .desc{
+            width: 100%;
+            font-size: 2rem;
+            margin: 2.5rem 0;
+         }
+    
+         .new-price{
+            font-size: 4.5rem;
+            margin-right: 1.8rem;
+         }
+    
+         .old-price{
+            font-size: 2rem;
+         }
+    
+         .product-btn{
+            font-size: 2rem;
+            padding: 1.8rem 0;
+         }
+    
+        .product-btn img{
+            width: 2rem;
+         }
+    }
