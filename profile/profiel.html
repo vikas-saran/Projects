@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE ME</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wrapper ">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="ticket">
+            <div id="mephoto"><img src="me.jpg" alt=""></div>
+            <p id="mename">VIKAS&nbsp;SARAN</p>
+            <p id="medesc">Web Developer</p>
+            <div class="buttons">
+                <button onclick="openpopup()" id="buttonlinks">
+                    <i class="fa-solid fa-share"></i>
+                    Share My Profile</button>
+                <button id="buttonfollow"><a href="https://github.com/vikas-saran">Follow Me</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popupmodal">
+        <div class="modalhead">
+            <p id="ShareMeProfile">Share My Profile</p>
+            <i class="modaldrop fa-solid fa-xmark modal-close" onclick="closepopup()"></i>
+        </div>
+        <p class="modaldesc">Share my via</p>
+        <div class="modallinks">
+            <a href="https://www.instagram.com/drunken_jerry_/" id="instagram-icon" class="icon" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/918619623108?text=Hi%20Himanshu" id="whatsapp-icon" class="icon" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://t.me/Vikassaran" id="telegram-icon" class="icon" target="_blank">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a href="https://github.com/vikas-saran" id="github-icon" class="icon" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="backblur" onclick="losepopup()"></div>
+    <script src="javasc.js"></script>
+
+</body>
+
+</html>
