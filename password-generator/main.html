@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-lelo</title>
+    <link rel="stylesheet" href="makeup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+</head>
+<body>
+    <div class="wrapper">
+     <div class="token">
+        <div class="headtitle">PASSWORD GENERSTOR</div>
+        <div class="output">
+            <input id="passout" type="text" readonly placeholder="Password">
+            <div id="copybox">
+                <img id="copyimg" src="copy.svg" alt="">
+                <span id="copiedbox"></span>
+            </div>
+        </div>
+        <div class="ticket">
+            <div class="passlen">
+                <p id="passlen-text">Password Lenth</p>
+                <p id="passlen-value">10</p>
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="20" step="1" id="slider">
+            </div>
+            <div class="passtype">
+                <div class="check-label">
+                    <input id="uppercase" type="checkbox">
+                    <label for="uppercase">Include Uppercase Letter</label>
+                </div>
+                <div class="check-label">
+                    <input id="lowercase" type="checkbox">
+                    <label for="lowercase">Include Lowercase Letter</label>
+                </div>
+                <div class="check-label">
+                    <input id="addnumber" type="checkbox">
+                    <label for="addnumber">Include Number</label>
+                </div>
+                   <div class="check-label">
+                    <input id="addsymbol" type="checkbox">
+                    <label for="addsymbol">Include Symbol </label>
+                </div>
+            </div>
+            <div class="strength">
+                <p id="strength-text">Strength</p>
+                <div id="strength-color"></div>
+            </div>
+            <button class="generatepass">Generate Password</button>
+        </div>
+      </div>  
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>

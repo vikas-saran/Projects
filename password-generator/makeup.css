@@ -1,0 +1,223 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+    --dk-violet: hsl(268, 75%, 9%);
+    --lt-violet: hsl(268, 47%, 21%);
+    --lt-violet2: hsl(281, 89%, 26%);
+    --vb-violet: hsl(285, 91%, 52%);
+    --vb-violet2: hsl(290, 70%, 36%);
+    --vb-yellow: hsl(52, 100%, 62%);
+    --pl-white: hsl(0, 0%, 100%);
+    --vb-cyan: hsl(176, 100%, 44%);
+    --vb-cyan2: hsl(177, 92%, 70%);
+    --dk-text: hsl(198, 20%, 13%);
+}
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper{
+    width:100vw;
+     height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 100% 0%, rgba(0, 110, 133, 1) 0%, rgba(144, 7, 167, 1) 81%);
+
+}
+.token{
+    width: 90%;
+    max-width: 450px;
+}
+.headtitle{
+      font-size: 3.2rem;
+    font-weight: 600;
+    color:var(--pl-white);
+    opacity: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.output{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: var(--dk-violet);
+    border-radius: 1rem;
+    border-bottom: .55rem solid var(--lt-violet);
+    margin: 1rem 0;
+    padding: 2rem 2rem 2rem;
+}
+#passout{
+    width: 100%;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--vb-yellow);
+    background: transparent;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+}
+
+#passout::placeholder{
+    color: var(--vb-yellow);
+    text-transform: uppercase;
+    opacity: 0.65;
+}
+#copybox{
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+#copybox #copyimg{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+#copybox #copiedbox{
+position: absolute;
+opacity: 0;
+color: var(--vb-yellow);
+font-size: 1rem;
+
+border-radius: 1rem;
+border:  .2rem solid var(--lt-violet);;
+transition: all .1sec;
+}
+.active{
+opacity: 1;
+}
+
+.ticket{
+    color: var(--pl-white);
+    background-color: var(--dk-violet);
+    border-bottom: 0.5rem solid var(--lt-violet2);
+    border-radius: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    padding: 2rem 2rem 2rem;
+}
+
+.passtype{
+    display: flex;
+    align-items: center;
+    column-gap: 1.6rem;
+    margin: 1.6rem 0;
+}
+.passlen{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+   
+}
+.passlen p:nth-child(1){
+    font-size: 2.7rem;
+}
+
+.passlen p:nth-child(2){
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--vb-yellow);
+}
+
+.passtype{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 1rem 0;
+    gap: 1.4rem 1rem;
+}
+.check-label{
+    display: flex;
+    gap: 1rem;
+}
+
+.passtype input[type="checkbox"]{
+    appearance: none;
+    width: 2.2rem;
+    height: 2.2rem;
+    border: 0.1rem solid var(--vb-cyan);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.passtype input[type="checkbox"]:checked{
+    background-color: var(--vb-cyan);
+}
+
+
+.passtype input[type="checkbox"]:checked::before{
+    content:'✔'; 
+    position: absolute;
+    top: -0.35rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--dk-text);
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.passtype label{
+    font-size:2.2rem;
+    text-transform: capitalize;
+    letter-spacing: 0.75px;
+}
+.strength{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin-top: 1.5rem;
+   margin-bottom: 2rem;
+}
+#strength-text{
+    font-size: 2.7rem;
+}
+
+#strength-color{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+
+}
+.generatepass{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 0;
+    border: none;
+    border-radius: 1.2rem;
+    border-bottom: 0.5rem solid var(--vb-yellow);
+    color: var(--vb-yellow);
+    background-color: var(--vb-violet);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
