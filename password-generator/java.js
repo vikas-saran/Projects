@@ -1,8 +1,9 @@
 const passout = document.querySelector("#passout");
-const copyimg = document.querySelector("#copyimg");
-const Copiedbox = document.querySelector("#copiedbox");
+const copyimg = document.querySelector(".copyimg");
+const Copiedbox = document.querySelector(".copiedbox");
 const passlenvalue = document.querySelector("#passlen-value");
 const slidecontainer = document.querySelector(".slidecontainer");
+const slider = document.querySelector("#slider");
 const uppercase = document.querySelector("#uppercase");
 const lowercase = document.querySelector("#lowercase");
 const addnumber = document.querySelector("#addnumber");
@@ -30,6 +31,11 @@ function rangefind(min,max){
 function onslidehandel(){
     slidecontainer.value=passwordlength;
     passlenvalue.innerText=passwordlength;
+
+    const Min=slider.min;
+    const Max=slider.max;
+    console.log(Max-Min);
+    slider.style.backgroundSize = ((passwordlength-Min)/(Max-Min)*100)+'% 100%';
 }
 onslidehandel()
 
@@ -83,10 +89,12 @@ async  function copyonboard() {
         Copiedbox.innerText="faliure";
       console.error('Failed to copy: ', err);
     }
-    Copiedbox.classList.add('active');
+    Copiedbox.classList.add("active");
+    console.log("added active");
     setTimeout(() => {
-        Copiedbox.classList.remove('active');
-    }, 2000);
+        Copiedbox.classList.remove("active");
+        console.log('removed');
+    }, 1000);
 }
 
 slidecontainer.addEventListener('input',(e) => {
