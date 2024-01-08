@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>window-VATAVARAN`</title>
     <link rel="stylesheet" href="css.css">
+
 <body>
-    <div class="lat"></div>
-    <div class="long"></div>
-    <div class="city"></div>
+    <div class="wrapper">
+        <p class="heading">WHEATHER APP</p>
+        <div class="wheather_tab">
+            <div class="tabs" id="my_wheather_tab">Your Wheather</div>
+            <div class="tabs" id="search_wheather_tab">Search Wheahter</div>
+        </div>
+        <div class="ticket">
+            <div class="grant_acces">
+                <img id="grant_acces_icon" src="media/location.png"  width="80" height="80" loading="lazy" alt="">
+                <p id="grant_acces_head">Grant Location Access</p>
+                <p id="grant_acces_desc">Allow Access to get weather Informatio</p>
+                <button id="grant_acces_button">GRANT ACCESS</button>
+            </div>
+            <form class="search_bar">
+                <input id="search_bar_input" placeholder="Search For City...." type="text">
+                <button id="search_bar_button"><img src="media/search.png" width="20" height="20" loading="lazy" alt=""></button>
+            </form>
+            <div class="loding_screen">
+                <img id="load_gif" src="media/loading.gif" alt="" width="80" height="80" loading="lazy">
+                <p id="load_desc">LOADING</p>
+            </div>
+
+            <div class="whetherdata">
+                <div class="location">
+                    <p id="location_name"></p>
+                    <img id="location_flag">
+                </div>
+                <p class="what'sup?"></p>
+                <img class="skyemoticon">
+                <p class="temperature"></p>
+                <div class="additionaldata">
+                    <div class="windspeed">
+                        <img src="media/wind.png" id="wind_emoji" alt="">
+                        <p id="windspeed_name">WINDSPEED</p>
+                        <p id="windspeed_data"></p>
+                    </div>
+                    <div class="humidity">
+                        <img src="media/humidity.png" id="humidity_emoji" alt="">
+                        <p id="humidity_name">HUMIDITY</p>
+                        <p id="humidity_data"></p>
+                    </div>
+                    <div class="clouds">
+                        <img src="media/cloud.png" id="clouds_emoji" alt="">
+                        <p id="clouds_name">CLOUDS</p>
+                        <p id="clouds_data"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="js.js"></script>
 </body>
+
 </html>
