@@ -8,6 +8,7 @@ const whetherdata=document.querySelector(".whetherdata");
 const API_key='d1845658f92b31c64bd94f06f7188c9c';
 let current_tab=my_wheather_tab;
 current_tab.classList.add("current_tab");
+check_access();
 
 
 function switch_screen(clicked_tab){
@@ -17,13 +18,13 @@ function switch_screen(clicked_tab){
         current_tab=clicked_tab;
         current_tab.classList.add("current_tab");
         if(!search_bar.classList.contains("active")){
-            whetherdata.classList.remove("avtive");
+            whetherdata.classList.remove("active");
             grant_access.classList.remove("active");
             search_bar.classList.add("active");
         }
         else{
             search_bar.classList.remove("active");
-            whetherdata.classList.remove("avtive");
+            whetherdata.classList.remove("active");
             check_access();
         }
    } 
