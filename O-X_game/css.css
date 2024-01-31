@@ -87,7 +87,7 @@ font-style: bold;
 margin-top: 4rem;
 }
 
-.new-game.active{
+.new_game.active{
 opacity: 1;
 visibility: visible;
 pointer-events: all;
