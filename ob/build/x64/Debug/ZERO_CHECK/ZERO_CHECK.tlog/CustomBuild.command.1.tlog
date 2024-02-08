@@ -1,0 +1,10 @@
+^C:\USERS\VIKASSARAN\DOWNLOADS\OPENCV1\OB\BUILD\CMAKEFILES\BF4006C07372709338C4A485C16F2EFF\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/vikassaran/Downloads/opencv1/ob -BC:/Users/vikassaran/Downloads/opencv1/ob/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/vikassaran/Downloads/opencv1/ob/build/ob.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
