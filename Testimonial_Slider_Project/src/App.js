@@ -1,8 +1,8 @@
-import React from "react";
-import reviews from "./data";
-import Testimonials from "./components/Testimonials";
+import React from 'react';
+import Testimonials from './components/testimonial';
+import reviews from './data';
 
-const App = () => {
+function App() {
   return (
     <div className="flex flex-col w-[100vw] min-h-[100vh] justify-center items-center bg-gray-200 py-12">
      
@@ -17,6 +17,6 @@ const App = () => {
       </div>
     </div>
   );
-};
+}
 
 export default App;
