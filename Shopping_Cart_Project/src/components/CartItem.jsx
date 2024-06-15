@@ -18,8 +18,7 @@ const CartItem = ({item}) => {
       <div className="flex justify-between py-3.5 px-2.5 gap-14 flex-col md:flex-row">
 
         <div className="md:w-[30%] w-full flex justify-center items-center">
-          <img src={item.image} alt="" className="w-[40%] md:w-[50%] lg:w-full"/>
-        </div>
+          <img src={item.image} alt="" className="w-[40%] md:w-[50%] lg:w-full"/> 
         <div className="md:w-[70%] w-full flex flex-col gap-5">
           <h1 className="text-xl font-[600] text-slate-700">{item.title}</h1>
           <h1 className="text-slate-700">{

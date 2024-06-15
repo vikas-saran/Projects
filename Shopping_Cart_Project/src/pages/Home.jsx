@@ -17,7 +17,7 @@ const Home = () => {
       setPosts(data);
     }
     catch(error) {
-      console.log("Error aagya ji");
+      console.log("Error aagya API packet fetch krte wkt");
       setPosts([]);
     }
     setLoading(false);
